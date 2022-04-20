@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+<div id="detail">
+    <div id="detail-title">
+      <h1>{{ item[1].capitalize() }}</h1>
+      <h3>${{ price }}</h3>
+    </div>
+  <div id="detail-pic">
+    <img src="static/imgs/{{ item[2] }}.jpeg" id="detail-img">
+  </div>
+  <p>{{ item[4] }}</p>
+</div>
+{% endblock %}

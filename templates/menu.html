@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+
+<div id="menu">
+  <h1 id="menu-title">Menu</h1>
+  {% for tuple in list %}
+    <div class="items">
+      <a href="/{{ tuple[1] }}">
+        <p class="names">{{ tuple[1].capitalize() }}</p>
+        <div class="img-wrap">
+          <img src="static/imgs/{{ tuple[2] }}.jpeg" class="pictures">
+        </div>
+          <p class="prices">${{ priceList[list.index(tuple)] }}</p>
+
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+
+{% endblock %}

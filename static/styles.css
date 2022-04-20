@@ -1,0 +1,231 @@
+
+body {
+  font-family: 'Hina Mincho', serif;
+  font-size: 18px;
+  background-image:url('./imgs/kyoto.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  margin: 0;
+  position: relative;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: white;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 65vh;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#title {
+  color: white;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > h1 {
+  margin-left: 20px;
+}
+
+header > ul {
+  display: flex;
+  margin-right: 20px;
+}
+header > ul > li {
+  list-style: none;
+  margin: 0 4px;
+  display: flex;
+  align-items: flex-end;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  color: white;
+  width: 5em;
+  height: 60%;
+  text-align: center;
+  display: block;
+  padding-top: 0.25em;
+  border-top: 3px solid white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  line-height: 0.5em;
+}
+
+#menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 16px;
+}
+
+#menu-title {
+  color: white;
+  grid-column: 1 / 4;
+  font-size: 4em;
+  margin-bottom: -0.15em;
+}
+
+.items {
+  backdrop-filter: blur(10px);
+  padding: 7px 15px 20px 15px;
+  box-shadow: 0px 0px 30px white;
+}
+
+.items > a {
+  display: grid;
+  grid-template-rows: 1fr 60% 1fr;
+}
+
+.names {
+  font-size: 22px;
+}
+
+
+.img-wrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%;
+}
+
+.pictures {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ------------ home ---------------- */
+
+#home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+/* ------------ about us page ---------------- */
+
+#about-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+#about-us > div:first-child {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+}
+
+#about-us > div:last-child {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  opacity: 80%;
+  min-height: 78vh;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 30px;
+}
+
+#info > div > h3 > span {
+  border-bottom: solid lightgray 2px;
+  padding: 0 20px 0.7em 20px;
+}
+
+#info > p {
+  width: 90%;
+  display: inline-block;
+  margin: auto;
+}
+
+
+/* ------------ contact page ---------------- */
+
+#contact {
+  width: 60%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+input, textarea {
+  border: none;
+  opacity: 80%;
+  margin: 8px;
+  padding: 15px;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+
+/* ------------ detail page ---------------- */
+
+#detail {
+  width: 70%;
+  padding: 20px;
+}
+
+#detail-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+
+#detail-pic {
+  margin: 30px;
+}
+
+#detail-img {
+  width: 70%;
+  object-fit: contain;
+}
